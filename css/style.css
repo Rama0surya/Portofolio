@@ -8140,7 +8140,7 @@ body {
   font-weight: 400;
   color: #999999; }
   body.menu-show {
-    overflow: auto;
+    overflow-x: hidden;
     position: fixed;
     height: 100%;
     width: 100%; }
@@ -8367,6 +8367,13 @@ h1, h2, h3, h4, h5,
   font-weight: 900;
   font-size: 24px;
   text-transform: uppercase; }
+
+.hero {
+
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scroll */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
 
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
